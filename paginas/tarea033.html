@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .daddy {background-color: lavender; display: grid; grid-template-areas:
+            "naranja-1 naranja-2 azul" 
+            "naranja-1 morados-2 azul"
+            "morados-1 morados-2 morados-3 " 
+            ; gap: 10px; height: 30vh; padding: 10px; width: 50vh;}
+        [class^="naranja"]{background-color: rgb(255, 115, 0);}
+        .naranja-1{grid-area: naranja-1;}
+        .naranja-2{grid-area: naranja-2;}
+        .azul{background-color:rgb(56, 103, 104) ; grid-area: azul;}
+        [class^="morados"]{background-color: rgb(92, 5, 92) ;}
+        .morados-1{grid-area: morados-1;}
+        .morados-2{grid-area: morados-2;}
+        .morados-3{grid-area: morados-3;}
+    </style>
+</head>
+<body>
+    <div class="daddy">
+        <div class="naranja-1"></div>
+        <div class="naranja-2"></div>
+        <div class="azul"></div>
+        <div class="morados-1"></div>
+        <div class="morados-2"></div>
+        <div class="morados-3"></div>
+    </div>
+</body>
+</html>
